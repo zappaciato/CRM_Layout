@@ -16,33 +16,42 @@
 
 <body>
     <!-- navbard top -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark py-0">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark py-1">
         <div class="container-fluid">
 
             
-            <a class="navbar-brand" href="#"><img src="./1665404132snowboarder-color-silhouette-low-poly.svg" alt="logo"
+            <a class="navbar-brand col-1" href="#"><img src="./1665404132snowboarder-color-silhouette-low-poly.svg" alt="logo"
                     width="30" height="24" class="d-inline-block align-text-top"></a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
                 aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-
                 <span class="navbar-toggler-icon"></span>
-
             </button>
 
-            <div class="collapse navbar-collapse container-fluid" id="navbarScroll">
-                <div class="container d-flex justify-content-end ">
+
+            <div class="collapse navbar-collapse container col-11 " id="navbarScroll">
+
+                <div class="container d-flex justify-content-start col-10 ">
+                    <ul class="navbar-nav my-2 me-5">
+                        <form class="d-flex me-5 col-5">
+                            <input class="form-control me-2" type="search" placeholder="Szukaj w emailach" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Szukaj</button>
+                        </form>
+                        <form class="d-flex me-5 col-5">
+                            <input class="form-control me-2" type="search" placeholder="Szukaj w zgłoszeniach" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Szukaj</button>
+                        </form>
+                    </ul>
+                </div>
+
+
+                <div class="container d-flex mx-auto">
                     <ul class="navbar-nav my-2 me-5 ">
                         <li class="nav-item ms-auto">
                             <a class="nav-link active text-warning" aria-current="page" href="#">Opcje</a>
                         </li>
                     </ul>
-                    <ul class="navbar-nav my-2">
-                        <li class="nav-item ms-auto">
-                            <a class="nav-link active text-warning" aria-current="page" href="#">Opcje2</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav my-2 ms-5">
+                    <ul class="navbar-nav my-2 px-5">
                         <div class="dropdown nav-btn-dropdown">
                             <a href="#" class="btn btn-primary dropdown-toggle" /* type="button"
                                 id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -66,10 +75,12 @@
 
                 </div>
             </div>
+
+        </div>    
     </nav>
 
 
-    <div class="container-fluid bg-dark bg-gradient d-none d-lg-flex col-lg-12 p-2 justify-content-end">
+    <!-- <div class="container-fluid bg-dark bg-gradient d-none d-lg-flex col-lg-12 p-2 justify-content-end">
     
 
         
@@ -84,9 +95,9 @@
                 <button class="btn btn-outline-success" type="submit">Szukaj</button>
             </form>
         
-    </div>
+    </div> -->
 
-    <div class="container-fluid">
+    <div class="container-fluid justify-content-evenly">
         <ul class="nav nav-tabs mt-3 px-5" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
                 <button class="nav-link active bg-primary text-white" id="new-notifications" data-bs-toggle="tab"
@@ -104,6 +115,7 @@
                     aria-selected="false">E-mails</button>
             </li>
         </ul>
+        
     </div>
 
     <div class="tab-content" id="myTabContent">
