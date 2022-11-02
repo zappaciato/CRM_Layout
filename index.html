@@ -91,24 +91,24 @@
     <div style="height: 108%;" class="tab-pane fade show active px-5 py-2 bg-kris-light" id="notifications"
         role="tabpanel" aria-labelledby="new-notifications">
 
-        <div id="content_section" class="p-2 table-responsive px-5">
-            <table class="table table-hover table-primary text-dark cast-shadow">
+        <div id="content_section" class="p-2  px-4">
+            <table class="table table-hover table-primary text-dark cast-shadow ">
                 <thead>
                     <tr>
-                        <th class="d-none d-md-table-cell" scope="col">Nr</th>
-                        <th class="d-none d-md-table-cell" scope="col">Nadawca</th>
-                        <th scope="col">Zawartość</th>
-                        <th class="d-none d-md-table-cell" scope="col">Data</th>
-                        <th class="d-none d-md-table-cell" scope="col">Akcje</th>
+                        <th class="d-none d-md-table-cell transparent-kris-bg" scope="col">Nr</th>
+                        <th class="d-none d-md-table-cell transparent-kris-bg" scope="col">Nadawca</th>
+                        <th class="transparent-kris-bg" scope="col">Zawartość</th>
+                        <th class="d-none d-md-table-cell transparent-kris-bg" scope="col">Data</th>
+                        <th class="d-none d-md-table-cell transparent-kris-bg" scope="col">Akcje</th>
                     </tr>
                 </thead>
 
 
                 <tbody>
-                    <tr class="table-row-hover-2">
+                    <tr class="table-row-hover-2 ">
                         <!-- przy wrzucaniu tego juz w CRMa trzeba pamietac, zeby czescia data bs target był numer (moze id number) ktory rowniez musi byc w tym polu email expanded;  -->
                         <th class="h6 d-none d-md-table-cell" scope="row">214</th>
-                        <td class="h6 d-none d-md-table-cell">wykrojniki@uds.com.pl
+                        <td class="h6 d-none d-md-table-cell ">wykrojniki@uds.com.pl
                         </td>
 
                         <td class="h7" data-bs-toggle="modal" data-bs-target="#modalNotificationDetails">
@@ -146,7 +146,7 @@
                                                 aria-expanded="false">
                                                 Akcje
                                             </button>
-                                            <ul class="dropdown-menu action-menu bg-light">
+                                            <ul class="dropdown-menu action-menu position-absolute bg-light">
                                                 <li><a class="dropdown-item" href="#">Przyjmij</a></li>
                                                 <li><a class="dropdown-item" href="#">Dodaj do zgłoszenia</a></li>
                                                 <li><a class="dropdown-item" href="#">Szybka odpowiedź</a></li>
@@ -164,7 +164,7 @@
                                             aria-label="Close"></button>
                                     </div>
 
-                                    <div class="modal-body bg-kris-yellow text-dark">
+                                    <div class="modal-body bg-kris-blue-light text-dark">
 
                                         <div class="overflow-auto">
 
@@ -240,13 +240,13 @@
 
 
 
-                        <td class="d-none d-md-table-cell">
+                        <td class="">
                             <div class="dropdown">
                                 <button class="btn btn-primary dropdown-toggle m-2" type="button"
                                     id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                     Akcje
                                 </button>
-                                <ul class="dropdown-menu action-menu">
+                                <ul class="dropdown-menu action-menu position-absolute">
                                     <li><a class="dropdown-item" href="#">Przyjmij</a></li>
                                     <li><a class="dropdown-item" href="#">Dodaj do zgłoszenia</a></li>
                                     <li><a class="dropdown-item" href="#">Szybka odpowiedź</a></li>
@@ -257,6 +257,8 @@
                                     <li><a class="dropdown-item text-danger" href="#">USUŃ</a></li>
                                 </ul>
                             </div>
+
+                            
 
                         </td>
 
@@ -274,8 +276,8 @@
 
         <!-- submenu service notifications bar -->
         <div class="container-fluid py-2 d-flex">
-            <button type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Opcje filtrowania..."
-                class="btn btn-primary ms-5 text-nowrap cast-shadow" data-bs-toggle="collapse" data-bs-target="#navbarCollapse2">
+            <button type="button" data-bs-toggle="offcanvas" data-bs-target="#filteringOptions" aria-controls="offcanvasExample" title="Opcje filtrowania..."
+                class="btn btn-primary ms-5 text-nowrap cast-shadow">
                 Opcje filtrowania
             </button>
         
@@ -291,13 +293,53 @@
             <button type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Opcje filtrowania..."
                 class="btn btn-success ms-5 text-nowrap d-none d-xl-flex cast-shadow" data-bs-toggle="collapse" data-bs-target="#navbarCollapse2">
                 Utwórz nowe zgłoszenie
+                <!-- tutaj a ref link do utworzenia nowego zgloszenia -->
             </button>
-        
-        
         </div>
 
+
+        <!-- OPCJE FILTROWANIA -->
+<div class="offcanvas offcanvas-start cast-shadow" tabindex="-1" id="filteringOptions" aria-labelledby="filteringOptions">
+    <div class="offcanvas-header bg-kris-red">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Opcje filtrowania</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body bg-kris-blue-light">
+        <div>
+            <form class="d-flex ms-1 col-12 d-lg-flex">
+                <!-- <input class="form-control me-2 cast-shadow" type="search" placeholder="Statusy..." aria-label="Search"> -->
+                <!-- <button class="btn btn-outline-success" type="submit">Szukaj</button> -->
+            </form>
+        </div>
+
+        <div class="columns_users_view">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+                <li class="list-group-item">A fourth item</li>
+                <li class="list-group-item">And a fifth one</li>
+            </ul>
+        </div>
+        <!-- Special dropdown: look at the old code -->
+        <div class="dropdown mt-3">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                Osoby odpowiedzialne
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Andrzej</a></li>
+                <li><a class="dropdown-item" href="#">Anna</a></li>
+                <li><a class="dropdown-item" href="#">Sławek</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <!-- END OPCJE FILTROWANIA -->
+
+
         <div class="table-responsive px-4">
-            <table class="table table-striped text-white table-hover cast-shadow">
+            <table class="table table-striped text-white table-hover cast-shadow border-bottom border-dark">
                 <thead>
                     <tr class="text-dark">
                         <th class="col-1" scope="col">#Nr</th>
