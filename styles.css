@@ -52,11 +52,11 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff5d7a",endCo
 }
 
 .bg-kris-light {
-    background-color: #E6F4F1 !important;
+    background-color: #FFEFD5 !important;
 }
 
 .bg-kris-light-2 {
-    background-color:  #9BEF87 !important;
+    background-color:  #AFEEEE !important;
 }
 
 
@@ -76,7 +76,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff5d7a",endCo
 
 .table-row-hover:hover {
     color: rgb(0, 0, 0) !important;
-    background-color:  rgba(223, 49, 49, 0.322) !important;
+    background-color:  #FFEBCD !important;
     box-shadow: rgba(0, 0, 0, 0.35) 8px 5px 15px;
     backdrop-filter: blur(9px);
 
@@ -87,7 +87,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff5d7a",endCo
     color: rgb(255, 255, 255) !important;
 /* background-color:  rgba(0, 0, 0, 0) !important; */
     /* box-shadow: rgba(0, 0, 0, 0.35) 2px 1px 7px; */
-   background-color: #ff5d7b96 !important;
+   background-color: #FF5D7A !important;
 
 }
 

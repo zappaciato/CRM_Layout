@@ -66,12 +66,12 @@
 <div class="container-fluid justify-content-evenly">
     <ul class="nav nav-tabs mt-3 px-5" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
-            <a href=""class="nav-link active bg-kris-grey text-white" id="new-notifications" data-bs-toggle="tab"
+            <a href=""class="nav-link active bg-kris-light" id="new-notifications" data-bs-toggle="tab"
                 data-bs-target="#notifications" type="button" role="tab" aria-controls="notifications"
                 aria-selected="true">Nowe Zgłoszenia</a>
         </li>
         <li class="nav-item" role="presentation">
-            <a href=""class="nav-link bg-kris-reddish" id="service-notifications" data-bs-toggle="tab"
+            <a href=""class="nav-link bg-kris-light-2" id="service-notifications" data-bs-toggle="tab"
                 data-bs-target="#services" type="button" role="tab" aria-controls="services"
                 aria-selected="false"><b>Zgłoszenia Serwisowe</b></a>
         </li>
@@ -88,11 +88,11 @@
 
     <!-- new notifications -->
 
-    <div style="height: 108%;" class="tab-pane fade show active px-5 py-2 bg-kris-grey-gradient" id="notifications"
+    <div style="height: 108%;" class="tab-pane fade show active px-5 py-2 bg-kris-light" id="notifications"
         role="tabpanel" aria-labelledby="new-notifications">
 
-        <div id="content_section" class="p-2 table-responsive">
-            <table class="table table-hover transparent-kris-bg text-white cast-shadow">
+        <div id="content_section" class="p-2 table-responsive px-5">
+            <table class="table table-hover table-primary text-dark cast-shadow">
                 <thead>
                     <tr>
                         <th class="d-none d-md-table-cell" scope="col">Nr</th>
@@ -107,8 +107,8 @@
                 <tbody>
                     <tr class="table-row-hover-2">
                         <!-- przy wrzucaniu tego juz w CRMa trzeba pamietac, zeby czescia data bs target był numer (moze id number) ktory rowniez musi byc w tym polu email expanded;  -->
-                        <th class="h6 text-white d-none d-md-table-cell" scope="row">214</th>
-                        <td class="h6 text-white d-none d-md-table-cell">wykrojniki@uds.com.pl
+                        <th class="h6 d-none d-md-table-cell" scope="row">214</th>
+                        <td class="h6 d-none d-md-table-cell">wykrojniki@uds.com.pl
                         </td>
 
                         <td class="h7" data-bs-toggle="modal" data-bs-target="#modalNotificationDetails">
@@ -269,35 +269,35 @@
 
 
     <!-- service notifications -->
-    <div style="height: 108%;" class="tab-pane fade px-5 py-2 bg-kris-red" id="services" role="tabpanel"
+    <div style="height: 108%;" class="tab-pane fade px-5 py-2 bg-kris-light-2" id="services" role="tabpanel"
         aria-labelledby="service-notifications">
 
         <!-- submenu service notifications bar -->
         <div class="container-fluid py-2 d-flex">
             <button type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Opcje filtrowania..."
-                class="btn btn-primary ms-5 text-nowrap " data-bs-toggle="collapse" data-bs-target="#navbarCollapse2">
+                class="btn btn-primary ms-5 text-nowrap cast-shadow" data-bs-toggle="collapse" data-bs-target="#navbarCollapse2">
                 Opcje filtrowania
             </button>
         
             <form class="d-flex ms-5 col-6 d-none d-md-flex">
-                <input class="form-control me-2" type="search" placeholder="Szukaj w zgłoszeniach..." aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Szukaj</button>
+                <input class="form-control me-2 cast-shadow" type="search" placeholder="Szukaj w zgłoszeniach..." aria-label="Search">
+                <button class="btn btn-outline-success cast-shadow" type="submit">Szukaj</button>
             </form>
             <form class="d-flex ms-5 col-2 d-none d-lg-flex">
-                <input class="form-control me-2" type="search" placeholder="Statusy..." aria-label="Search">
+                <input class="form-control me-2 cast-shadow" type="search" placeholder="Statusy..." aria-label="Search">
                 <!-- <button class="btn btn-outline-success" type="submit">Szukaj</button> -->
             </form>
         
             <button type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Opcje filtrowania..."
-                class="btn btn-success ms-5 text-nowrap d-none d-xl-flex" data-bs-toggle="collapse" data-bs-target="#navbarCollapse2">
+                class="btn btn-success ms-5 text-nowrap d-none d-xl-flex cast-shadow" data-bs-toggle="collapse" data-bs-target="#navbarCollapse2">
                 Utwórz nowe zgłoszenie
             </button>
         
         
         </div>
 
-        <div class="table-responsive">
-            <table class="table table-striped  transparent-kris-bg text-white table-hover cast-shadow ">
+        <div class="table-responsive px-4">
+            <table class="table table-striped text-white table-hover cast-shadow">
                 <thead>
                     <tr class="text-dark">
                         <th class="col-1" scope="col">#Nr</th>
