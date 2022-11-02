@@ -6,17 +6,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<link type="text/css" rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <!-- this link is for saas it can be pointing to normaln css. -->
+<!-- <link type="text/css" rel="stylesheet" href="./scss/main.css">  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body class="">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-gradient">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">PerfectCut</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <a href="#" class="nav-item nav-link active">Klienci</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Wiadomości</a>
+                        <ul class="dropdown-menu action-menu">
+                            <li><a class="dropdown-item" href="#">Skrzynka odbiorcza</a></li>
+                            <li><a class="dropdown-item" href="#">Cos tam</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-danger" href="#">Jeszcze coś</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="navbar-nav col-8 d-none d-lg-flex">
+                <form class="d-flex me-5 col-6">
+                    <input class="form-control me-2" type="search" placeholder="Szukaj w emailach" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Szukaj</button>
+                </form>
+                <form class="d-flex me-5">
+                    <input class="form-control me-2" type="search" placeholder="Szukaj w zgłoszeniach" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Szukaj</button>
+                </form>
+                </div>
+                <div class="navbar-nav">
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Krzysztof F.</a>
+                        <ul class="dropdown-menu action-menu">
+                            <li><a class="dropdown-item" href="#">Mój profil</a></li>
+                            <li><a class="dropdown-item" href="#">Dane</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-danger" href="#">WYLOGUJ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
     <!-- navbard top -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark py-1">
+    <!-- <nav class="navbar navbar-expand-md navbar-dark bg-dark py-1">
         <div class="container-fluid">
 
             
@@ -29,15 +77,15 @@
             </button>
 
 
-            <div class="collapse navbar-collapse container col-11 " id="navbarScroll">
+            <div class="collapse navbar-collapse container col-11 justify-content-end " id="navbarScroll">
 
-                <div class="container d-flex justify-content-start col-10 ">
-                    <ul class="navbar-nav my-2 me-5">
-                        <form class="d-flex me-5 col-5">
+                <div class=" col-9 ">
+                    <ul class="navbar-nav my-2 me-5 justify-content-evenly">
+                        <form class="d-flex me-5 col-4">
                             <input class="form-control me-2" type="search" placeholder="Szukaj w emailach" aria-label="Search">
                             <button class="btn btn-outline-success" type="submit">Szukaj</button>
                         </form>
-                        <form class="d-flex me-5 col-5">
+                        <form class="d-flex me-5 col-4">
                             <input class="form-control me-2" type="search" placeholder="Szukaj w zgłoszeniach" aria-label="Search">
                             <button class="btn btn-outline-success" type="submit">Szukaj</button>
                         </form>
@@ -45,7 +93,7 @@
                 </div>
 
 
-                <div class="container d-flex mx-auto">
+                <div class="container d-flex col-2 justify-content-end">
                     <ul class="navbar-nav my-2 me-5 ">
                         <li class="nav-item ms-auto">
                             <a class="nav-link active text-warning" aria-current="page" href="#">Opcje</a>
@@ -77,7 +125,7 @@
             </div>
 
         </div>    
-    </nav>
+    </nav> -->
 
 
     <!-- <div class="container-fluid bg-dark bg-gradient d-none d-lg-flex col-lg-12 p-2 justify-content-end">
@@ -99,34 +147,37 @@
 
     <div class="container-fluid justify-content-evenly">
         <ul class="nav nav-tabs mt-3 px-5" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link active bg-primary text-white" id="new-notifications" data-bs-toggle="tab"
+
+            <li class="nav-item " role="presentation">
+                <button class="nav-link active bg-lilac-luster" id="new-notifications" data-bs-toggle="tab"
                     data-bs-target="#notifications" type="button" role="tab" aria-controls="notifications"
                     aria-selected="true">Nowe Zgłoszenia</button>
             </li>
+
             <li class="nav-item" role="presentation">
-                <button class="nav-link bg-warning" id="service-notifications" data-bs-toggle="tab"
+                <button class="nav-link bg-dust-blue-light" id="service-notifications" data-bs-toggle="tab"
                     data-bs-target="#services" type="button" role="tab" aria-controls="services"
                     aria-selected="false">Zgłoszenia Serwisowe</button>
             </li>
+
             <li class="nav-item d-none d-md-flex" role="presentation">
                 <button class="nav-link bg-success text-white" id="emails-list" data-bs-toggle="tab"
                     data-bs-target="#emails" type="button" role="tab" aria-controls="emails"
                     aria-selected="false">E-mails</button>
             </li>
+
         </ul>
-        
     </div>
 
-    <div class="tab-content" id="myTabContent">
+    <div class="tab-content " style="font-size: 1rem;" id="myTabContent">
 
         <!-- new notifications -->
 
-        <div class="tab-pane fade show active px-5 py-2 bg-primary bg-gradient text-white" id="notifications"
+        <div class="tab-pane fade show active px-5 py-2 tab-content-style bg-lilac-luster text-white d-flex flex-column" id="notifications"
             role="tabpanel" aria-labelledby="new-notifications">
 
-            <div id="content_section" class="p-2">
-                <table class="table table-hover table-light">
+            <div id="content_section" class="p-2 ">
+                <table class="table table-hover bg-dust text-white cust-shadow">
                     <thead>
                         <tr>
                             <th class="d-none d-md-table-cell" scope="col">Nr</th>
@@ -145,7 +196,7 @@
                             <td class="h6 text-primary d-none d-md-table-cell">wykrojniki@uds.com.pl
                             </td>
 
-                            <td class="h7" data-bs-toggle="modal" data-bs-target="#modalNotificationDetails">
+                            <td class="h7 table-row-hover" data-bs-toggle="modal" data-bs-target="#modalNotificationDetails">
 
                                 <span class="h6 text-primary ">Temat:</span> zam609_11453_22 long text long textlong
                                 textlong zam609_11453_22 long text long textlong
@@ -172,7 +223,7 @@
 
                                 <div class="modal-dialog modal-xl">
                                     <div class="modal-content ">
-                                        <div class="modal-header text-dark">
+                                        <div class="modal-header text-dark bg-dust-reddish">
 
                                             <div class="dropdown nav-btn-dropdown">
                                                 <button class="btn btn-primary dropdown-toggle m-2" type="button"
@@ -198,7 +249,7 @@
                                                 aria-label="Close"></button>
                                         </div>
 
-                                        <div class="modal-body bg-light bg-gradient text-dark">
+                                        <div class="modal-body bg-dust-light-2 text-dark">
 
                                             <div class="overflow-auto">
 
@@ -222,9 +273,9 @@
                                                         <h5 class="m-2">Załączniki:</h5>
                                                     </div>
                                                     <span>|</span>
-                                                    <h6>Zał numer 1</h6><span>|</span>
-                                                    <h6>Zał numer 2</h6><span>|</span>
-                                                    <h6>Zał numer 3</h6><span>|</span>
+                                                    <h6> <a href="./Monika House.pdf" target="_blank">Nazawa załącznika.pdf</a> </h6><span>|</span>
+                                                    <h6> <a href="./1665404132snowboarder-color-silhouette-low-poly.svg" target="_blank">A picture.jpg</a> </h6><span>|</span>
+                                                    <h6> <a href="./Platformy spis.png" target="_blank"> excel in doc file.doc</a> </h6><span>|</span>
                                                     <h6>Zał numer 4</h6><span>|</span>
                                                     <h6>Zał numer 5</h6><span>|</span>
                                                     <h6>Zał numer 6</h6><span>|</span>
@@ -298,36 +349,59 @@
                 </table>
             </div>
         </div>
-
+</div>
 
 
         <!-- service notifications -->
-        <div class="tab-pane fade px-5 py-2 bg-warning text-white" id="services" role="tabpanel"
+        <div class="tab-pane fade px-5 py-2 tab-content-style bg-lilac-luster text-white d-flex flex-column" id="services" role="tabpanel"
             aria-labelledby="service-notifications">
 
-            <div class="table-responsive">
-                <table class="table table-striped  bg-warning table-hover table-bordered">
+                    <!-- button hamburger for the notifications menu -->
+                    <div class="container-fluid py-2 d-flex">
+                        <button type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Opcje filtrowania..." class="btn btn-danger ms-5" data-bs-toggle="collapse" data-bs-target="#navbarCollapse2">
+                            Opcje filtrowania
+                        </button>
+
+                        <form class="d-flex ms-5 col-6">
+                            <input class="form-control me-2" type="search" placeholder="Szukaj w zgłoszeniach..." aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Szukaj</button>
+                        </form>
+                        <form class="d-flex ms-5 col-2">
+                            <input class="form-control me-2" type="search" placeholder="Statusy..." aria-label="Search">
+                            <!-- <button class="btn btn-outline-success" type="submit">Szukaj</button> -->
+                        </form>
+
+                        <button type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Opcje filtrowania..."
+                            class="btn btn-success ms-5" data-bs-toggle="collapse" data-bs-target="#navbarCollapse2">
+                            Utwórz nowe zgłoszenie
+                        </button>
+
+
+                    </div>
+
+            <div class="table-responsive px-5 col-12">
+                <table class="table table-striped bg-dust-light table-hover table-bordered border-1 border-primary cust-shadow">
                     <thead>
                         <tr>
                             <th class="col-1" scope="col">#Nr</th>
                             <th class="col-4" scope="col">Tytuł</th>
-                            <th class="col-1 d-none d-md-table-cell" scope="col">Status</th>
-                            <th class="col-1 d-none d-md-table-cell" scope="col">Typ</th>
-                            <th class="col-1 d-none d-md-table-cell" scope="col">Email</th>
-                            <th class="col-1 d-none d-md-table-cell" scope="col">Termin</th>
-                            <th class="col-1 d-none d-md-table-cell" scope="col">Uwagi</th>
-                            <th class="col-1 d-none d-md-table-cell" scope="col">Prowadzący</th>
-                            <th class="col-1 d-none d-md-table-cell" scope="col">Otrzymano</th>
+                            <th class="col-1 d-none d-md-table-cell text-center" scope="col">Status</th>
+                            <th class="col-1 d-none d-md-table-cell text-center" scope="col">Typ</th>
+                            <th class="col-1 d-none d-md-table-cell text-center" scope="col">Email</th>
+                            <th class="col-1 d-none d-md-table-cell text-center" scope="col">Termin</th>
+                            <th class="col-1 d-none d-md-table-cell text-center" scope="col">Uwagi</th>
+                            <th class="col-1 d-none d-md-table-cell text-center" scope="col">Prowadzący</th>
+                            <th class="col-1 d-none d-md-table-cell text-center" scope="col">Otrzymano</th>
                         </tr>
                     </thead>
 
                     <tbody>
                         <tr>
                             <th scope="row">1</th>
-                            <td class="text-center" data-bs-toggle="modal" data-bs-target="#modalServiceDetails"
+                            <td class="table-row-hover-2" data-bs-toggle="modal" data-bs-target="#modalServiceDetails"
                                 style="cursor: pointer;"> Piekne wykrojniki na produkcje
                                 lallalalalalalalallalalalalalallala kolorowe jarmarki kogicikiiiiii i jeszcze czy warto
-                                było szalec tak???? nie warto kurwa, nie warto! </td>
+                                było szalec tak???? nie warto k...a, nie warto! </td>
                             <td class="text-center d-none d-md-table-cell">W realizacji</td>
                             <td class="text-center d-none d-md-table-cell">Z sekcją</td>
                             <td class="text-center d-none d-md-table-cell">kris@gmail.com</td>
@@ -343,7 +417,7 @@
                     <tbody>
                         <tr>
                             <th scope="row">34</th>
-                            <td class="text-center" data-bs-toggle="modal" data-bs-target="#modalServiceDetails"
+                            <td class="" data-bs-toggle="modal" data-bs-target="#modalServiceDetails"
                                 style="cursor: pointer;"> Piekne
                                 wykrojniki na produkcje lallalalalalalalallalalalalalallala </td>
                             <td class="text-center d-none d-md-table-cell">W realizacji</td>
@@ -356,19 +430,8 @@
 
                         </tr>
                     </tbody>
-
-
-
-
-
-
                 </table>
             </div>
-
-
-
-
-
 
 
         </div>
@@ -382,14 +445,14 @@
 
                 <div class="modal-content bg-light bg-gradient">
 
-                    <div class="modal-header">
+                    <div class="modal-header bg-dust-reddish">
                         <h6>[#008356] Zamówienie na wykrojnik_PRZEKŁADKA 1600x1400 B1 BAIER - PODKOVA 256x1600 K_2153
                         </h6>
 
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
 
-                    <div class="modal-body">
+                    <div class="modal-body bg-dust-light-2">
 
 
                         <div class="col-12 p-0 overflow-visible border-end" id="col1">
@@ -626,8 +689,9 @@
 
     </div>
 
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
-<script type="text/javascript" src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+<!-- <script type="text/javascript" src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script> -->
 
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

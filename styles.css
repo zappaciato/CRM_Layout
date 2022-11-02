@@ -1,0 +1,77 @@
+/* colors */
+
+.bg-flickr-blue {
+
+    background-color: #0d60d4ff ; 
+};
+.bg-pale-purple-pantone {
+
+    background-color: #e7dbffff ; 
+};
+.bg-maximum-blue-purple {
+
+    background-color: #baaddbff ; 
+};
+.bg-lilac-luster {
+
+    background-color: #ad929fff ; 
+};
+.bg-gunmetal {
+
+    background-color: #2e313bff ; 
+};
+
+
+
+
+/* end colors */
+
+.bg-dust {
+    background-color: #454555 !important;
+}
+
+.bg-dust-grey {
+    background-color: #AAAABC  !important;
+}
+
+.bg-dust-red {
+    background-color: #ff5d7b  !important;
+}
+
+.bg-dust-light {
+    background-color: #E6F4F1 !important;
+}
+
+.bg-dust-light-2 {
+    background-color:  #FFEFCA !important;
+}
+
+
+
+.bg-dust-blue-light {
+    background-color: #B6D7FF !important;
+}
+
+.bg-dust-reddish {
+    background-color: #FF5D7A !important;
+}
+
+
+.table-row-hover:hover {
+    color: rgb(236, 253, 0) !important;
+    
+}
+
+
+.table-row-hover-2:hover {
+    color: rgb(25, 0, 253) !important;
+}
+
+.tab-content-style {
+    min-height: 50rem;
+}
+
+.cust-shadow {
+    box-shadow: rgba(0, 0, 0, 0.35) 8px 5px 15px;
+    backdrop-filter: blur(5px);
+}
