@@ -63,271 +63,187 @@
             </div>
         </div>
     </nav>
-    <!-- navbard top -->
-    <!-- <nav class="navbar navbar-expand-md navbar-dark bg-dark py-1">
-        <div class="container-fluid">
+<div class="container-fluid justify-content-evenly">
+    <ul class="nav nav-tabs mt-3 px-5" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a href=""class="nav-link active bg-kris-grey text-white" id="new-notifications" data-bs-toggle="tab"
+                data-bs-target="#notifications" type="button" role="tab" aria-controls="notifications"
+                aria-selected="true">Nowe Zgłoszenia</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a href=""class="nav-link bg-kris-reddish" id="service-notifications" data-bs-toggle="tab"
+                data-bs-target="#services" type="button" role="tab" aria-controls="services"
+                aria-selected="false"><b>Zgłoszenia Serwisowe</b></a>
+        </li>
+        <li class="nav-item d-none d-md-flex" role="presentation">
+            <a href=""class="nav-link bg-success text-white" id="emails-list" data-bs-toggle="tab"
+                data-bs-target="#emails" type="button" role="tab" aria-controls="emails"
+                aria-selected="false">E-mails</a>
+        </li>
+    </ul>
 
-            
-            <a class="navbar-brand col-1" href="#"><img src="./1665404132snowboarder-color-silhouette-low-poly.svg" alt="logo"
-                    width="30" height="24" class="d-inline-block align-text-top"></a>
+</div>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+<div style="height: 80vh;" class="tab-content" id="myTabContent">
 
+    <!-- new notifications -->
 
-            <div class="collapse navbar-collapse container col-11 justify-content-end " id="navbarScroll">
+    <div style="height: 108%;" class="tab-pane fade show active px-5 py-2 bg-kris-grey-gradient" id="notifications"
+        role="tabpanel" aria-labelledby="new-notifications">
 
-                <div class=" col-9 ">
-                    <ul class="navbar-nav my-2 me-5 justify-content-evenly">
-                        <form class="d-flex me-5 col-4">
-                            <input class="form-control me-2" type="search" placeholder="Szukaj w emailach" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Szukaj</button>
-                        </form>
-                        <form class="d-flex me-5 col-4">
-                            <input class="form-control me-2" type="search" placeholder="Szukaj w zgłoszeniach" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Szukaj</button>
-                        </form>
-                    </ul>
-                </div>
-
-
-                <div class="container d-flex col-2 justify-content-end">
-                    <ul class="navbar-nav my-2 me-5 ">
-                        <li class="nav-item ms-auto">
-                            <a class="nav-link active text-warning" aria-current="page" href="#">Opcje</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav my-2 px-5">
-                        <div class="dropdown nav-btn-dropdown">
-                            <a href="#" class="btn btn-primary dropdown-toggle" /* type="button"
-                                id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                </i> KF
-                            </a>
-                            <ul class="dropdown-menu action-menu">
-                                <li><a class="dropdown-item" href="#">Mój profil</a></li>
-                                <li><a class="dropdown-item" href="#">Dane</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item text-danger" href="#">WYLOGUJ</a></li>
-                            </ul>
-                        </div>
-                    </ul>
+        <div id="content_section" class="p-2 table-responsive">
+            <table class="table table-hover transparent-kris-bg text-white cast-shadow">
+                <thead>
+                    <tr>
+                        <th class="d-none d-md-table-cell" scope="col">Nr</th>
+                        <th class="d-none d-md-table-cell" scope="col">Nadawca</th>
+                        <th scope="col">Zawartość</th>
+                        <th class="d-none d-md-table-cell" scope="col">Data</th>
+                        <th class="d-none d-md-table-cell" scope="col">Akcje</th>
+                    </tr>
+                </thead>
 
 
+                <tbody>
+                    <tr class="table-row-hover-2">
+                        <!-- przy wrzucaniu tego juz w CRMa trzeba pamietac, zeby czescia data bs target był numer (moze id number) ktory rowniez musi byc w tym polu email expanded;  -->
+                        <th class="h6 text-white d-none d-md-table-cell" scope="row">214</th>
+                        <td class="h6 text-white d-none d-md-table-cell">wykrojniki@uds.com.pl
+                        </td>
+
+                        <td class="h7" data-bs-toggle="modal" data-bs-target="#modalNotificationDetails">
+
+                            <span class="h6"> <b>Temat:</b></span class="table-row-hover-2;"> zam609_11453_22 long text long textlong
+                            textlong zam609_11453_22 long text long textlong
+                            textlongzam609_11453_22 long text long textlong
+                            textlongzam609_11453_22 long text long textlong
+                            textlongzam609_11453_22 long text long textlong
+                            textlongzam609_11453_22 long text long textlong
+                            textlong
 
 
+                        </td>
 
-
-                </div>
-            </div>
-
-        </div>    
-    </nav> -->
-
-
-    <!-- <div class="container-fluid bg-dark bg-gradient d-none d-lg-flex col-lg-12 p-2 justify-content-end">
-    
-
-        
-
-
-            <form class="d-flex col-4 me-5">
-                <input class="form-control me-2" type="search" placeholder="Szukaj w emailach" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Szukaj</button>
-            </form>
-            <form class="d-flex col-4 me-5">
-                <input class="form-control me-2" type="search" placeholder="Szukaj w zgłoszeniach" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Szukaj</button>
-            </form>
-        
-    </div> -->
-
-    <div class="container-fluid justify-content-evenly">
-        <ul class="nav nav-tabs mt-3 px-5" id="myTab" role="tablist">
-
-            <li class="nav-item " role="presentation">
-                <button class="nav-link active bg-dust" id="new-notifications" data-bs-toggle="tab"
-                    data-bs-target="#notifications" type="button" role="tab" aria-controls="notifications"
-                    aria-selected="true">Nowe Zgłoszenia</button>
-            </li>
-
-            <li class="nav-item" role="presentation">
-                <button class="nav-link bg-dust-blue-light" id="service-notifications" data-bs-toggle="tab"
-                    data-bs-target="#services" type="button" role="tab" aria-controls="services"
-                    aria-selected="false">Zgłoszenia Serwisowe</button>
-            </li>
-
-            <li class="nav-item d-none d-md-flex" role="presentation">
-                <button class="nav-link bg-success text-white" id="emails-list" data-bs-toggle="tab"
-                    data-bs-target="#emails" type="button" role="tab" aria-controls="emails"
-                    aria-selected="false">E-mails</button>
-            </li>
-
-        </ul>
-    </div>
-
-    <div class="tab-content " style="font-size: 1rem;" id="myTabContent">
-
-        <!-- new notifications -->
-
-        <div class="tab-pane fade show active px-5 py-2 tab-content-style bg-danger text-white d-flex flex-column" id="notifications"
-            role="tabpanel" aria-labelledby="new-notifications">
-
-            <div id="table-responsive px-5 col-12" class="p-2 ">
-                <table class="table table-hover bg-dust text-white cust-shadow">
-                    <thead>
-                        <tr>
-                            <th class="d-none d-md-table-cell" scope="col">Nr</th>
-                            <th class="d-none d-md-table-cell" scope="col">Nadawca</th>
-                            <th scope="col">Zawartość</th>
-                            <th class="d-none d-md-table-cell" scope="col">Data</th>
-                            <th class="d-none d-md-table-cell" scope="col">Akcje</th>
-                        </tr>
-                    </thead>
-
-
-                    <tbody>
-                        <tr>
-                            <!-- przy wrzucaniu tego juz w CRMa trzeba pamietac, zeby czescia data bs target był numer (moze id number) ktory rowniez musi byc w tym polu email expanded;  -->
-                            <th class="h6 text-primary d-none d-md-table-cell" scope="row">214</th>
-                            <td class="h6 text-primary d-none d-md-table-cell">wykrojniki@uds.com.pl
-                            </td>
-
-                            <td class="h7 table-row-hover" data-bs-toggle="modal" data-bs-target="#modalNotificationDetails">
-
-                                <span class="h6 text-primary ">Temat:</span> zam609_11453_22 long text long textlong
-                                textlong zam609_11453_22 long text long textlong
-                                textlongzam609_11453_22 long text long textlong
-                                textlongzam609_11453_22 long text long textlong
-                                textlongzam609_11453_22 long text long textlong
-                                textlongzam609_11453_22 long text long textlong
-                                textlong
-
-
-                            </td>
-
-                            <td class="h6 text-primary d-none d-md-table-cell">2022-10-17 09:31:25</td>
+                        <td class="h6 d-none d-md-table-cell"><b>2022-10-17 09:31:25</b></td>
 
 
 
 
-                            <!-- expanded and formated email notification field -->
+                        <!-- expanded and formated email notification field -->
 
-                            <div class="modal fade" id="modalNotificationDetails" data-bs-backdrop="static"
-                                data-bs-keyboard="false" tabindex="-1" aria-hidden="true"
-                                aria-labelledby="modalNotificationDetails">
+                        <div class="modal fade" id="modalNotificationDetails" data-bs-backdrop="static"
+                            data-bs-keyboard="false" tabindex="-1" aria-hidden="true"
+                            aria-labelledby="modalNotificationDetails">
 
 
-                                <div class="modal-dialog modal-xl">
-                                    <div class="modal-content ">
-                                        <div class="modal-header text-dark bg-dust-reddish">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content ">
+                                    <div class="modal-header text-white bg-kris-red2">
 
-                                            <div class="dropdown nav-btn-dropdown">
-                                                <button class="btn btn-primary dropdown-toggle m-2" type="button"
-                                                    id="dropdownMenuButton2" data-bs-toggle="dropdown"
-                                                    aria-expanded="false">
-                                                    Akcje
-                                                </button>
-                                                <ul class="dropdown-menu action-menu bg-light">
-                                                    <li><a class="dropdown-item" href="#">Przyjmij</a></li>
-                                                    <li><a class="dropdown-item" href="#">Dodaj do zgłoszenia</a></li>
-                                                    <li><a class="dropdown-item" href="#">Szybka odpowiedź</a></li>
-                                                    <li><a class="dropdown-item" href="#">Przekaż</a></li>
-                                                    <li>
-                                                        <hr class="dropdown-divider">
-                                                    </li>
-                                                    <li><a class="dropdown-item text-danger" href="#">USUŃ</a></li>
-                                                </ul>
-                                            </div>
-
-                                            <h3 class="ms-5">[#78634] Tytuł tego emaila wykrojniki</h3>
-
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
+                                        <div class="dropdown nav-btn-dropdown">
+                                            <button class="btn btn-primary dropdown-toggle m-2" type="button"
+                                                id="dropdownMenuButton2" data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                                Akcje
+                                            </button>
+                                            <ul class="dropdown-menu action-menu bg-light">
+                                                <li><a class="dropdown-item" href="#">Przyjmij</a></li>
+                                                <li><a class="dropdown-item" href="#">Dodaj do zgłoszenia</a></li>
+                                                <li><a class="dropdown-item" href="#">Szybka odpowiedź</a></li>
+                                                <li><a class="dropdown-item" href="#">Przekaż</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item text-danger" href="#">USUŃ</a></li>
+                                            </ul>
                                         </div>
 
-                                        <div class="modal-body bg-dust-light-2 text-dark">
+                                        <h3 class="ms-5">[#78634] Tytuł tego emaila wykrojniki</h3>
 
-                                            <div class="overflow-auto">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
 
-                                                <div class="d-flex flex-column">
+                                    <div class="modal-body bg-kris-yellow text-dark">
 
-                                                    <div class="d-flex justify-content-start align-items-center">
-                                                        <h5 class="m-2"> Od:</h5>
-                                                        <h4 class="m-2">wykroniki@usd.com.pl</h4>
-                                                    </div>
-                                                    <div class="d-flex justify-content-start align-items-center">
-                                                        <h5 class="m-2"> Do: </h5>
-                                                        <h4 class="m-2">kontakt@perfectcut.pl</h4>
-                                                    </div>
+                                        <div class="overflow-auto">
 
+                                            <div class="d-flex flex-column">
+
+                                                <div class="d-flex justify-content-start align-items-center">
+                                                    <h5 class="m-2"> Od:</h5>
+                                                    <h4 class="m-2">wykroniki@usd.com.pl</h4>
+                                                </div>
+                                                <div class="d-flex justify-content-start align-items-center">
+                                                    <h5 class="m-2"> Do: </h5>
+                                                    <h4 class="m-2">kontakt@perfectcut.pl</h4>
                                                 </div>
 
-
-                                                <div
-                                                    class="d-flex flex-row justify-content-evenly align-items-baseline m-5">
-                                                    <div class="d-flex justify-content-start align-items-center ">
-                                                        <h5 class="m-2">Załączniki:</h5>
-                                                    </div>
-                                                    <span>|</span>
-                                                    <h6> <a href="./Monika House.pdf" target="_blank">Nazawa załącznika.pdf</a> </h6><span>|</span>
-                                                    <h6> <a href="./1665404132snowboarder-color-silhouette-low-poly.svg" target="_blank">A picture.jpg</a> </h6><span>|</span>
-                                                    <h6> <a href="./Platformy spis.png" target="_blank"> excel in doc file.doc</a> </h6><span>|</span>
-                                                    <h6>Zał numer 4</h6><span>|</span>
-                                                    <h6>Zał numer 5</h6><span>|</span>
-                                                    <h6>Zał numer 6</h6><span>|</span>
-                                                    <h6>Zał numer 7</h6><span>|</span>
-                                                    <h6>Zał numer 8</h6>
-                                                    <span>|</span>
-                                                </div>
-
-
-                                                <h5 class="m-2">Treść zgłoszenia:</h5>
-                                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur
-                                                    laboriosam exercitationem sequi,
-                                                    minus
-                                                    incidunt accusamus, quibusdam quas debitis corrupti sint nisi
-                                                    dolorem aliquid. Rerum maxime,
-                                                    c
-
-                                                </p>
-                                                <img style="width: 200px; height:200px;"
-                                                    src="./perfectcut_wallpaper.jpg" alt="">
-                                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur
-                                                    laboriosam exercitationem sequi,
-                                                    minus
-                                                    incidunt accusamus, quibusdam quas debitis corrupti sint nisi
-                                                    dolorem aliquid. Rerum maxime,
-                                                    corporis
-                                                    voluptate qui incidunt recusandae!
-                                                </p>
-                                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur
-                                                    laboriosam exercitationem sequi,
-                                                    minus
-
-
-                                                </p>
                                             </div>
 
+
+                                            <div
+                                                class="d-flex flex-row justify-content-evenly align-items-baseline m-5">
+                                                <div class="d-flex justify-content-start align-items-center ">
+                                                    <h5 class="m-2">Załączniki:</h5>
+                                                </div>
+                                                <span>|</span>
+                                                <h6> <a href="./Monika House.pdf" target="_blank">Nazawa załącznika.pdf</a> </h6><span>|</span>
+                                                <h6> <a href="./1665404132snowboarder-color-silhouette-low-poly.svg" target="_blank">A picture.jpg</a> </h6>
+                                                <span>|</span>
+                                                <h6> <a href="./Platformy spis.png" target="_blank"> excel in doc file.doc</a> </h6><span>|</span>
+                                                <h6>Zał numer 4</h6><span>|</span>
+                                                <h6>Zał numer 5</h6><span>|</span>
+                                                <h6>Zał numer 6</h6><span>|</span>
+                                                <h6>Zał numer 7</h6><span>|</span>
+                                                <h6>Zał numer 8</h6>
+                                                <span>|</span>
+                                            </div>
+
+
+                                            <h5 class="m-2">Treść zgłoszenia:</h5>
+                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur
+                                                laboriosam exercitationem sequi,
+                                                minus
+                                                incidunt accusamus, quibusdam quas debitis corrupti sint nisi
+                                                dolorem aliquid. Rerum maxime,
+                                                c
+
+                                            </p>
+                                            <img style="width: 200px; height:200px;" src="./perfectcut_wallpaper.jpg"
+                                                alt="">
+                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur
+                                                laboriosam exercitationem sequi,
+                                                minus
+                                                incidunt accusamus, quibusdam quas debitis corrupti sint nisi
+                                                dolorem aliquid. Rerum maxime,
+                                                corporis
+                                                voluptate qui incidunt recusandae!
+                                            </p>
+                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur
+                                                laboriosam exercitationem sequi,
+                                                minus
+
+
+                                            </p>
                                         </div>
 
                                     </div>
 
-
                                 </div>
+
 
                             </div>
 
+                        </div>
 
 
 
-                            <td class="d-none d-md-table-cell">
+
+                        <td class="d-none d-md-table-cell">
                             <div class="dropdown">
-                                <button class="btn btn-primary dropdown-toggle m-2" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
+                                <button class="btn btn-primary dropdown-toggle m-2" type="button"
+                                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                     Akcje
                                 </button>
                                 <ul class="dropdown-menu action-menu">
@@ -342,352 +258,364 @@
                                 </ul>
                             </div>
 
-                            </td>
+                        </td>
 
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-</div>
+    </div>
 
 
-        <!-- service notifications -->
-        <div class="tab-pane fade px-5 py-2 tab-content-style bg-warning text-white " id="services" role="tabpanel"
-            aria-labelledby="service-notifications">
 
-                    <!-- submenu for srvice notifiations -->
-                    <div class="container-fluid py-2 d-flex">
-                        <button type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Opcje filtrowania..." class="btn btn-danger ms-5" data-bs-toggle="collapse" data-bs-target="#navbarCollapse2">
-                            Opcje filtrowania
-                        </button>
+    <!-- service notifications -->
+    <div style="height: 108%;" class="tab-pane fade px-5 py-2 bg-kris-red" id="services" role="tabpanel"
+        aria-labelledby="service-notifications">
 
-                        <form class="d-flex ms-5 col-6">
-                            <input class="form-control me-2" type="search" placeholder="Szukaj w zgłoszeniach..." aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Szukaj</button>
-                        </form>
-                        <form class="d-flex ms-5 col-2">
-                            <input class="form-control me-2" type="search" placeholder="Statusy..." aria-label="Search">
-                            <!-- <button class="btn btn-outline-success" type="submit">Szukaj</button> -->
-                        </form>
-
-                        <button type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Opcje filtrowania..."
-                            class="btn btn-success ms-5" data-bs-toggle="collapse" data-bs-target="#navbarCollapse2">
-                            Utwórz nowe zgłoszenie
-                        </button>
-
-
-                    </div>
-
-            <div class="table-responsive px-5 col-12">
-                <table class="table table-striped bg-dust-light table-hover table-bordered border-1 border-primary cust-shadow">
-                    <thead>
-                        <tr>
-                            <th class="col-1" scope="col">#Nr</th>
-                            <th class="col-4" scope="col">Tytuł</th>
-                            <th class="col-1 d-none d-md-table-cell text-center" scope="col">Status</th>
-                            <th class="col-1 d-none d-md-table-cell text-center" scope="col">Typ</th>
-                            <th class="col-1 d-none d-md-table-cell text-center" scope="col">Email</th>
-                            <th class="col-1 d-none d-md-table-cell text-center" scope="col">Termin</th>
-                            <th class="col-1 d-none d-md-table-cell text-center" scope="col">Uwagi</th>
-                            <th class="col-1 d-none d-md-table-cell text-center" scope="col">Prowadzący</th>
-                            <th class="col-1 d-none d-md-table-cell text-center" scope="col">Otrzymano</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td class="table-row-hover-2" data-bs-toggle="modal" data-bs-target="#modalServiceDetails"
-                                style="cursor: pointer;"> Piekne wykrojniki na produkcje
-                                lallalalalalalalallalalalalalallala kolorowe jarmarki kogicikiiiiii i jeszcze czy warto
-                                było szalec tak???? nie warto k...a, nie warto! </td>
-                            <td class="text-center d-none d-md-table-cell">W realizacji</td>
-                            <td class="text-center d-none d-md-table-cell">Z sekcją</td>
-                            <td class="text-center d-none d-md-table-cell">kris@gmail.com</td>
-                            <td class="text-center d-none d-md-table-cell">22.10.2022</td>
-                            <td class="text-center d-none d-md-table-cell">2 BD 8 GS</td>
-                            <td class="text-center d-none d-md-table-cell">Kris F.</td>
-                            <td class="text-center d-none d-md-table-cell">17.10.2022</td>
-
-                        </tr>
-                    </tbody>
-
-
-                    <tbody>
-                        <tr>
-                            <th scope="row">34</th>
-                            <td class="" data-bs-toggle="modal" data-bs-target="#modalServiceDetails"
-                                style="cursor: pointer;"> Piekne
-                                wykrojniki na produkcje lallalalalalalalallalalalalalallala </td>
-                            <td class="text-center d-none d-md-table-cell">W realizacji</td>
-                            <td class="text-center d-none d-md-table-cell">Z sekcją</td>
-                            <td class="text-center d-none d-md-table-cell">kris@gmail.com</td>
-                            <td class="text-center d-none d-md-table-cell">22.10.2022</td>
-                            <td class="text-center d-none d-md-table-cell">2 BD 8 GS</td>
-                            <td class="text-center d-none d-md-table-cell">Kris F.</td>
-                            <td class="text-center d-none d-md-table-cell">17.10.2022</td>
-
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-
+        <!-- submenu service notifications bar -->
+        <div class="container-fluid py-2 d-flex">
+            <button type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Opcje filtrowania..."
+                class="btn btn-primary ms-5 text-nowrap " data-bs-toggle="collapse" data-bs-target="#navbarCollapse2">
+                Opcje filtrowania
+            </button>
+        
+            <form class="d-flex ms-5 col-6 d-none d-md-flex">
+                <input class="form-control me-2" type="search" placeholder="Szukaj w zgłoszeniach..." aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Szukaj</button>
+            </form>
+            <form class="d-flex ms-5 col-2 d-none d-lg-flex">
+                <input class="form-control me-2" type="search" placeholder="Statusy..." aria-label="Search">
+                <!-- <button class="btn btn-outline-success" type="submit">Szukaj</button> -->
+            </form>
+        
+            <button type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Opcje filtrowania..."
+                class="btn btn-success ms-5 text-nowrap d-none d-xl-flex" data-bs-toggle="collapse" data-bs-target="#navbarCollapse2">
+                Utwórz nowe zgłoszenie
+            </button>
+        
+        
         </div>
 
-        <!-- service details -->
-        <div class="modal fade" id="modalServiceDetails" data-bs-backdrop="static" data-bs-keyboard="false"
-            tabindex="-1" aria-hidden="true" aria-labelledby="modalNotificationDetails">
+        <div class="table-responsive">
+            <table class="table table-striped  transparent-kris-bg text-white table-hover cast-shadow ">
+                <thead>
+                    <tr class="text-dark">
+                        <th class="col-1" scope="col">#Nr</th>
+                        <th class="col-4" scope="col">Tytuł</th>
+                        <th class="col-1 d-none d-md-table-cell" scope="col">Status</th>
+                        <th class="col-1 d-none d-md-table-cell" scope="col">Typ</th>
+                        <th class="col-1 d-none d-md-table-cell" scope="col">Email</th>
+                        <th class="col-1 d-none d-md-table-cell" scope="col">Termin</th>
+                        <th class="col-1 d-none d-lg-table-cell" scope="col">Uwagi</th>
+                        <th class="col-1 d-none d-lg-table-cell" scope="col">Prowadzący</th>
+                        <th class="col-1 d-none d-lg-table-cell" scope="col">Otrzymano</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr class="table-row-hover">
+                        <th scope="row">1</th>
+                        <td class="text-center " data-bs-toggle="modal" data-bs-target="#modalServiceDetails"
+                            style="cursor: pointer;"> Piekne wykrojniki na produkcje
+                            lallalalalalalalallalalalalalallala kolorowe jarmarki kogicikiiiiii i jeszcze czy warto
+                            było szalec tak???? nie warto kurwa, nie warto! </td>
+                        <td class="text-center d-none d-md-table-cell">W realizacji</td>
+                        <td class="text-center d-none d-md-table-cell">Z sekcją</td>
+                        <td class="text-center d-none d-md-table-cell">kris@gmail.com</td>
+                        <td class="text-center d-none d-md-table-cell">22.10.2022</td>
+                        <td class="text-center d-none d-lg-table-cell">2 BD 8 GS</td>
+                        <td class="text-center d-none d-lg-table-cell">Kris F.</td>
+                        <td class="text-center d-none d-lg-table-cell">17.10.2022</td>
+
+                    </tr>
+                </tbody>
 
 
-            <div class="modal-dialog modal-xl">
+                <tbody>
+                    <tr class="table-row-hover">
+                        <th scope="row">34</th>
+                        <td class="text-center" data-bs-toggle="modal" data-bs-target="#modalServiceDetails"
+                            style="cursor: pointer;"> Piekne
+                            wykrojniki na produkcje lallalalalalalalallalalalalalallala </td>
+                        <td class="text-center d-none d-md-table-cell">W realizacji</td>
+                        <td class="text-center d-none d-md-table-cell">Z sekcją</td>
+                        <td class="text-center d-none d-md-table-cell">kris@gmail.com</td>
+                        <td class="text-center d-none d-md-table-cell">22.10.2022</td>
+                        <td class="text-center d-none d-lg-table-cell">2 BD 8 GS</td>
+                        <td class="text-center d-none d-lg-table-cell">Kris F.</td>
+                        <td class="text-center d-none d-lg-table-cell">17.10.2022</td>
 
-                <div class="modal-content bg-light bg-gradient">
-
-                    <div class="modal-header bg-dust-reddish">
-                        <h6>[#008356] Zamówienie na wykrojnik_PRZEKŁADKA 1600x1400 B1 BAIER - PODKOVA 256x1600 K_2153
-                        </h6>
-
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-
-                    <div class="modal-body bg-dust-light-2">
+                    </tr>
+                </tbody>
 
 
-                        <div class="col-12 p-0 overflow-visible border-end" id="col1">
-                            <h5 class="sticky-top bg-dark text-white p-3 m-0">[#008356] Zamówienie na
-                                wykrojnik_PRZEKŁADKA 1600x1400 B1 BAIER - PODKOVA 256x1600 K_2153</h5>
 
 
-                            <div class="p-1">
-                                <div class="row">
-                                    <div class="col-auto text-center flex-column d-none d-lg-flex">
-                                        <div class="row h-50">
-                                            <div class="col">&nbsp;</div>
-                                            <div class="col">&nbsp;</div>
-                                        </div>
-                                        <h5 class="">
-                                            <i class="bi bi-bag-fill"></i>
-                                        </h5>
-                                        <div class="row h-50">
-                                            <div class="col border-end">&nbsp;</div>
-                                            <div class="col">&nbsp;</div>
-                                        </div>
+
+
+            </table>
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+    <!-- service details -->
+    <div class="modal fade" id="modalServiceDetails" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-hidden="true" aria-labelledby="modalNotificationDetails">
+
+
+        <div class="modal-dialog modal-xl">
+
+            <div class="modal-content bg-light bg-gradient">
+
+                <div class="modal-header bg-kris-red2">
+                    <h6>[#008356] Zamówienie na wykrojnik_PRZEKŁADKA 1600x1400 B1 BAIER - PODKOVA 256x1600 K_2153
+                    </h6>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body bg-kris-yellow">
+
+
+                    <div class="col-12 p-0 overflow-visible border-end" id="col1">
+                        <h5 class="sticky-top bg-dark text-white p-3 m-0">[#008356] Zamówienie na
+                            wykrojnik_PRZEKŁADKA 1600x1400 B1 BAIER - PODKOVA 256x1600 K_2153</h5>
+
+
+                        <div class="p-1">
+                            <div class="row">
+                                <div class="col-auto text-center flex-column d-none d-lg-flex">
+                                    <div class="row h-50">
+                                        <div class="col">&nbsp;</div>
+                                        <div class="col">&nbsp;</div>
                                     </div>
-                                    <div class="col">
-                                        <div class="">
-                                            <div class="card-body">
-                                                <h7 class="card-title text-muted text-dark">Przyjęcie zgłoszenia</h7>
-                                                <p class="card-text text-muted">Zgłosenie zostało przyjęte</p>
-                                            </div>
+                                    <h5 class="">
+                                        <i class="bi bi-bag-fill"></i>
+                                    </h5>
+                                    <div class="row h-50">
+                                        <div class="col border-end">&nbsp;</div>
+                                        <div class="col">&nbsp;</div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="">
+                                        <div class="card-body">
+                                            <h7 class="card-title text-muted text-dark">Przyjęcie zgłoszenia</h7>
+                                            <p class="card-text text-muted">Zgłosenie zostało przyjęte</p>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
 
-                                <div class="row">
-                                    <div class="col-auto text-center flex-column d-none d-lg-flex">
-                                        <div class="row h-50">
-                                            <div class="col border-end">&nbsp;</div>
-                                            <div class="col">&nbsp;</div>
-                                        </div>
-                                        <h5 class="m-2">
-                                            <i class="bi bi-arrow-repeat"></i>
-                                        </h5>
-                                        <div class="row h-50">
-                                            <div class="col border-end">&nbsp;</div>
-                                            <div class="col">&nbsp;</div>
-                                        </div>
+                            <div class="row">
+                                <div class="col-auto text-center flex-column d-none d-lg-flex">
+                                    <div class="row h-50">
+                                        <div class="col border-end">&nbsp;</div>
+                                        <div class="col">&nbsp;</div>
                                     </div>
-                                    <div class="col">
-                                        <div class="">
-                                            <div class="card-body justify-content-around">
-                                                <p style="font-size: 0.7rem;" class="card-title">Zgłoszenie przekazane
-                                                </p>
-                                                <p style="font-size: 0.7rem;" class="card-text">Zgłoszenie zostało
-                                                    przekazane do
-                                                <h6 class="text-danger">Tomasz Janowski</h6>
-                                                </p>
-                                            </div>
+                                    <h5 class="m-2">
+                                        <i class="bi bi-arrow-repeat"></i>
+                                    </h5>
+                                    <div class="row h-50">
+                                        <div class="col border-end">&nbsp;</div>
+                                        <div class="col">&nbsp;</div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="">
+                                        <div class="card-body justify-content-around">
+                                            <p style="font-size: 0.7rem;" class="card-title">Zgłoszenie przekazane
+                                            </p>
+                                            <p style="font-size: 0.7rem;" class="card-text">Zgłoszenie zostało
+                                                przekazane do
+                                            <h6 class="text-danger">Tomasz Janowski</h6>
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
 
-                                <div class="row">
-                                    <div class="col-auto text-center flex-column d-none d-lg-flex">
-                                        <div class="row h-50">
-                                            <div class="col border-end">&nbsp;</div>
-                                            <div class="col">&nbsp;</div>
-                                        </div>
-                                        <h5 class="m-2">
-                                            <i class="bi bi-arrow-up-circle"></i>
-                                        </h5>
-                                        <div class="row h-50">
-                                            <div class="col border-end">&nbsp;</div>
-                                            <div class="col">&nbsp;</div>
-                                        </div>
+                            <div class="row">
+                                <div class="col-auto text-center flex-column d-none d-lg-flex">
+                                    <div class="row h-50">
+                                        <div class="col border-end">&nbsp;</div>
+                                        <div class="col">&nbsp;</div>
                                     </div>
-                                    <div class="col ">
-                                        <div class="">
-                                            <div class="card-body">
-                                                <h7 class="card-title text-muted">Aktualizacja Zgłoszenia</h7>
-                                                <p class="card-text text-muted">Zgłoszenie zostało zaktualizowane:
-                                                    zmienilismy to i tamto...</p>
-                                            </div>
+                                    <h5 class="m-2">
+                                        <i class="bi bi-arrow-up-circle"></i>
+                                    </h5>
+                                    <div class="row h-50">
+                                        <div class="col border-end">&nbsp;</div>
+                                        <div class="col">&nbsp;</div>
+                                    </div>
+                                </div>
+                                <div class="col ">
+                                    <div class="">
+                                        <div class="card-body">
+                                            <h7 class="card-title text-muted">Aktualizacja Zgłoszenia</h7>
+                                            <p class="card-text text-muted">Zgłoszenie zostało zaktualizowane:
+                                                zmienilismy to i tamto...</p>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
 
-                                <div class="row">
-                                    <div class="col-auto text-center flex-column d-none d-lg-flex">
-                                        <div class="row h-50">
-                                            <div class="col border-end">&nbsp;</div>
-                                            <div class="col">&nbsp;</div>
-                                        </div>
-                                        <h5 class="m-2">
-                                            <i class="bi bi-arrow-repeat"></i>
-                                        </h5>
-                                        <div class="row h-50">
-                                            <div class="col border-end">&nbsp;</div>
-                                            <div class="col">&nbsp;</div>
-                                        </div>
+                            <div class="row">
+                                <div class="col-auto text-center flex-column d-none d-lg-flex">
+                                    <div class="row h-50">
+                                        <div class="col border-end">&nbsp;</div>
+                                        <div class="col">&nbsp;</div>
                                     </div>
-                                    <div class="col ">
-                                        <div class="">
-                                            <div class="card-body">
-                                                <h7 class="card-title text-muted">Aktualizacja Zgłoszenia</h7>
-                                                <p class="card-text text-muted">Zgłoszenie zostało zaktualizowane:
-                                                    zmienilismy to i tamto...</p>
-                                            </div>
+                                    <h5 class="m-2">
+                                        <i class="bi bi-arrow-repeat"></i>
+                                    </h5>
+                                    <div class="row h-50">
+                                        <div class="col border-end">&nbsp;</div>
+                                        <div class="col">&nbsp;</div>
+                                    </div>
+                                </div>
+                                <div class="col ">
+                                    <div class="">
+                                        <div class="card-body">
+                                            <h7 class="card-title text-muted">Aktualizacja Zgłoszenia</h7>
+                                            <p class="card-text text-muted">Zgłoszenie zostało zaktualizowane:
+                                                zmienilismy to i tamto...</p>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
 
-                                <div class="row">
-                                    <div class="col-auto text-center flex-column d-none d-lg-flex">
-                                        <div class="row h-50">
-                                            <div class="col border-end">&nbsp;</div>
-                                            <div class="col">&nbsp;</div>
-                                        </div>
-                                        <h5 class="m-2">
-                                            <i class="bi bi-x-circle"></i>
-                                        </h5>
-                                        <div class="row h-50">
-                                            <div class="col border-end">&nbsp;</div>
-                                            <div class="col">&nbsp;</div>
-                                        </div>
+                            <div class="row">
+                                <div class="col-auto text-center flex-column d-none d-lg-flex">
+                                    <div class="row h-50">
+                                        <div class="col border-end">&nbsp;</div>
+                                        <div class="col">&nbsp;</div>
                                     </div>
-                                    <div class="col">
-                                        <div class="">
-                                            <div class="card-body">
-                                                <h7 class="card-title text-muted">Anulowanie zgłoszenia</h7>
-                                                <p class="card-text text-muted">Złoszenie zostało anulowane przez
-                                                <h5>Piotrek Opęchowski</h5>
-                                                </p>
-                                            </div>
-                                        </div>
-
+                                    <h5 class="m-2">
+                                        <i class="bi bi-x-circle"></i>
+                                    </h5>
+                                    <div class="row h-50">
+                                        <div class="col border-end">&nbsp;</div>
+                                        <div class="col">&nbsp;</div>
                                     </div>
                                 </div>
-
-                                <div class="row">
-                                    <div class="col-auto text-center flex-column d-none d-lg-flex">
-                                        <div class="row h-50">
-                                            <div class="col border-end">&nbsp;</div>
-                                            <div class="col">&nbsp;</div>
-                                        </div>
-                                        <h5 class="m-2">
-                                            <i class="bi bi-arrow-down-circle"></i>
-                                        </h5>
-                                        <div class="row h-50">
-                                            <div class="col border-end">&nbsp;</div>
-                                            <div class="col">&nbsp;</div>
+                                <div class="col">
+                                    <div class="">
+                                        <div class="card-body">
+                                            <h7 class="card-title text-muted">Anulowanie zgłoszenia</h7>
+                                            <p class="card-text text-muted">Złoszenie zostało anulowane przez
+                                            <h5>Piotrek Opęchowski</h5>
+                                            </p>
                                         </div>
                                     </div>
-                                    <div class="col ">
-                                        <div class="">
-                                            <div class="card-body">
-                                                <!-- <div class="float-end">Date</div> -->
-                                                <h4 class="card-title text-muted">Inna opcja</h4>
-                                                <p class="card-text text-muted">coś tam coś tam</p>
-                                            </div>
-                                        </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-auto text-center flex-column d-none d-lg-flex">
+                                    <div class="row h-50">
+                                        <div class="col border-end">&nbsp;</div>
+                                        <div class="col">&nbsp;</div>
+                                    </div>
+                                    <h5 class="m-2">
+                                        <i class="bi bi-arrow-down-circle"></i>
+                                    </h5>
+                                    <div class="row h-50">
+                                        <div class="col border-end">&nbsp;</div>
+                                        <div class="col">&nbsp;</div>
                                     </div>
                                 </div>
-
-                                <div class="row">
-                                    <div class="col-auto text-center flex-column d-none d-lg-flex">
-                                        <div class="row h-50">
-                                            <div class="col border-end">&nbsp;</div>
-                                            <div class="col">&nbsp;</div>
-                                        </div>
-                                        <h5 class="m-2">
-                                            <i class="bi bi-arrow-down-circle"></i>
-                                        </h5>
-                                        <div class="row h-50">
-                                            <div class="col">&nbsp;</div>
-                                            <div class="col">&nbsp;</div>
-                                        </div>
-                                    </div>
-                                    <div class="col ">
-                                        <div class="">
-                                            <div class="card-body">
-                                                <!-- <div class="float-end">Date</div> -->
-                                                <h7 class="card-title text-muted">Akcja</h7>
-                                                <p class="card-text text-muted">Data zgłoszenia została zmieniona</p>
-                                            </div>
+                                <div class="col ">
+                                    <div class="">
+                                        <div class="card-body">
+                                            <!-- <div class="float-end">Date</div> -->
+                                            <h4 class="card-title text-muted">Inna opcja</h4>
+                                            <p class="card-text text-muted">coś tam coś tam</p>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
 
-                                <div class="row">
-                                    <div class="col-auto text-center flex-column d-none d-lg-flex">
-                                        <div class="row h-50">
-                                            <div class="col border-end">&nbsp;</div>
-                                            <div class="col">&nbsp;</div>
-                                        </div>
-                                        <h5 class="m-2">
-                                            <i class="bi bi-arrow-down-circle"></i>
-                                        </h5>
-                                        <div class="row h-50">
-                                            <div class="col">&nbsp;</div>
-                                            <div class="col">&nbsp;</div>
+                            <div class="row">
+                                <div class="col-auto text-center flex-column d-none d-lg-flex">
+                                    <div class="row h-50">
+                                        <div class="col border-end">&nbsp;</div>
+                                        <div class="col">&nbsp;</div>
+                                    </div>
+                                    <h5 class="m-2">
+                                        <i class="bi bi-arrow-down-circle"></i>
+                                    </h5>
+                                    <div class="row h-50">
+                                        <div class="col">&nbsp;</div>
+                                        <div class="col">&nbsp;</div>
+                                    </div>
+                                </div>
+                                <div class="col ">
+                                    <div class="">
+                                        <div class="card-body">
+                                            <!-- <div class="float-end">Date</div> -->
+                                            <h7 class="card-title text-muted">Akcja</h7>
+                                            <p class="card-text text-muted">Data zgłoszenia została zmieniona</p>
                                         </div>
                                     </div>
-                                    <div class="col ">
-                                        <div class="">
-                                            <div class="card-body">
-                                                <!-- <div class="float-end">Date</div> -->
-                                                <h7 class="card-title text-muted">Akcja</h7>
-                                                <p class="card-text text-muted">Data zgłoszenia została zmieniona</p>
-                                            </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-auto text-center flex-column d-none d-lg-flex">
+                                    <div class="row h-50">
+                                        <div class="col border-end">&nbsp;</div>
+                                        <div class="col">&nbsp;</div>
+                                    </div>
+                                    <h5 class="m-2">
+                                        <i class="bi bi-arrow-down-circle"></i>
+                                    </h5>
+                                    <div class="row h-50">
+                                        <div class="col">&nbsp;</div>
+                                        <div class="col">&nbsp;</div>
+                                    </div>
+                                </div>
+                                <div class="col ">
+                                    <div class="">
+                                        <div class="card-body">
+                                            <!-- <div class="float-end">Date</div> -->
+                                            <h7 class="card-title text-muted">Akcja</h7>
+                                            <p class="card-text text-muted">Data zgłoszenia została zmieniona</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-
-
                     </div>
+
+
 
                 </div>
 
             </div>
 
-
         </div>
 
 
-        <!-- Service details END -->
-
-
-        <!-- emails tab -->
-
-        <div class="tab-pane fade px-5 py-2 bg-success text-white" id="emails" role="tabpanel"
-            aria-labelledby="emails-list">.emails-list..</div>
-
     </div>
+
+
+    <!-- Service details END -->
+
+
+    <!-- emails tab -->
+
+    <div style="height: 108%;" class="emails-tab tab-pane fade px-5 py-2 bg-success" id="emails" role="tabpanel"
+        aria-labelledby="emails-list">.emails-list goes here..</div>
+
+</div>
 
 <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
