@@ -275,26 +275,22 @@
         aria-labelledby="service-notifications">
 
         <!-- submenu service notifications bar -->
-        <div class="container-fluid py-2 d-flex">
+        <div class="container py-2 d-flex justify-content-evenly">
             <button type="button" data-bs-toggle="offcanvas" data-bs-target="#filteringOptions" aria-controls="offcanvasExample" title="Opcje filtrowania..."
-                class="btn btn-primary ms-5 text-nowrap cast-shadow">
+                class="btn btn-primary ms-5 text-nowrap cast-shadow col">
                 Opcje filtrowania
             </button>
-        
-            <form class="d-flex ms-5 col-6 d-none d-md-flex">
-                <input class="form-control me-2 cast-shadow" type="search" placeholder="Szukaj w zgłoszeniach..." aria-label="Search">
-                <button class="btn btn-outline-success cast-shadow" type="submit">Szukaj</button>
-            </form>
-            <form class="d-flex ms-5 col-2 d-none d-lg-flex">
-                <input class="form-control me-2 cast-shadow" type="search" placeholder="Statusy..." aria-label="Search">
-                <!-- <button class="btn btn-outline-success" type="submit">Szukaj</button> -->
-            </form>
-        
             <button type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Opcje filtrowania..."
-                class="btn btn-success ms-5 text-nowrap d-none d-xl-flex cast-shadow" data-bs-toggle="collapse" data-bs-target="#navbarCollapse2">
+                class="btn btn-success ms-5 text-nowrap d-none d-xl-flex cast-shadow col-3" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse2">
                 Utwórz nowe zgłoszenie
                 <!-- tutaj a ref link do utworzenia nowego zgloszenia -->
             </button>
+        
+            <form class="d-flex ms-5 col-6 d-none d-md-flex col">
+                <input class="form-control me-2 cast-shadow " type="search" placeholder="Szukaj w zgłoszeniach..." aria-label="Search">
+                <button class="btn btn-outline-success cast-shadow" type="submit">Szukaj</button>
+            </form>
         </div>
 
 
@@ -309,6 +305,10 @@
             <form class="d-flex ms-1 col-12 d-lg-flex">
                 <!-- <input class="form-control me-2 cast-shadow" type="search" placeholder="Statusy..." aria-label="Search"> -->
                 <!-- <button class="btn btn-outline-success" type="submit">Szukaj</button> -->
+                <form class="d-flex ms-5 col-2 d-none d-lg-flex">
+                    <input class="form-control me-2 cast-shadow" type="search" placeholder="Statusy..." aria-label="Search">
+                    <!-- <button class="btn btn-outline-success" type="submit">Szukaj</button> -->
+                </form>
             </form>
         </div>
 
